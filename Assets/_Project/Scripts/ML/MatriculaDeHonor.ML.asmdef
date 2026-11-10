@@ -1,0 +1,25 @@
+{
+    "name": "MatriculaDeHonor.ML",
+    "rootNamespace": "MatriculaDeHonor.ML",
+    "references": [
+        "MatriculaDeHonor.Runtime",
+        "Unity.ML-Agents"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "MDH_MLAGENTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.ml-agents",
+            "expression": "3.0.0",
+            "define": "MDH_MLAGENTS"
+        }
+    ],
+    "noEngineReferences": false
+}
