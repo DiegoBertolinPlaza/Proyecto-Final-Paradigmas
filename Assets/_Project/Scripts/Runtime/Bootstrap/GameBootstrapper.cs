@@ -21,8 +21,8 @@ namespace MatriculaDeHonor.Bootstrap
             var catalog = Resources.Load<LevelCatalog>(LevelCatalog.ResourcePath);
             if (catalog == null)
             {
-                Debug.LogWarning("[Bootstrap] No se encuentra Resources/LevelCatalog. Usa el menú " +
-                                 "'Matrícula de Honor > Generar contenido base' del editor.");
+                Debug.LogWarning("[Bootstrap] Aún no hay Resources/LevelCatalog: el GameManager arranca sin " +
+                                 "lista de niveles (normal en la escena de prueba).");
             }
 
             var root = new GameObject("[Systems]");
