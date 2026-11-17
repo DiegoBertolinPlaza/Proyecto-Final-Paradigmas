@@ -1,7 +1,7 @@
 # Instrucciones para Claude
 
-Proyecto final de Paradigmas de la Programación (ICAI): **Matrícula de Honor**, plataformas 3D en
-Unity 6000.6.8f1. Diseño en `docs/GDD.md`; forma de trabajar en `CONTRIBUTING.md`.
+Proyecto final de Paradigmas de la Programación (ICAI): **Cum Laude**, plataformas 3D en
+Unity 6000.6.8f1 (el código aún usa el namespace `MatriculaDeHonor`). Diseño en `docs/GDD.md`; forma de trabajar en `CONTRIBUTING.md`.
 
 ## Reglas del equipo
 

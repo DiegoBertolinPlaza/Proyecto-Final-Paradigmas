@@ -1,4 +1,4 @@
-# Matrícula de Honor — GDD de una página
+# Cum Laude — GDD de una página
 
 > Documento vivo. Lo marcado con **[decidir]** está propuesto pero falta que lo cerremos los dos.
 > Si cambia algo del diseño, se cambia aquí en una PR `docs/*`.
@@ -12,7 +12,7 @@
 
 ## Idea
 
-Eres un estudiante del ICAI que quiere sacar Matrícula de Honor. Cruzas diez zonas del campus
+Eres un estudiante del ICAI que quiere graduarse *cum laude*. Cruzas diez zonas del campus
 recogiendo créditos ECTS y Matrículas de Honor mientras los profesores intentan que suspendas.
 Los profesores son **arquetipos inventados**, no personas reales.
 
