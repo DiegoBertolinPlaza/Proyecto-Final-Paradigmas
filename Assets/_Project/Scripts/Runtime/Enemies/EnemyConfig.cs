@@ -6,7 +6,7 @@ namespace MatriculaDeHonor.Enemies
     /// Parámetros de un tipo de profesor. La dificultad de cada nivel se ajusta aquí
     /// (más visión, más oído, mejor puntería...) sin tocar el código de la IA.
     /// </summary>
-    [CreateAssetMenu(menuName = "Matrícula de Honor/Enemigos/Configuración de profesor", fileName = "EnemyConfig")]
+    [CreateAssetMenu(menuName = "Cum Laude/Enemigos/Configuración de profesor", fileName = "EnemyConfig")]
     public sealed class EnemyConfig : ScriptableObject
     {
         [Header("Identidad")]

@@ -3,7 +3,7 @@ using UnityEngine;
 namespace MatriculaDeHonor.Levels
 {
     /// <summary>Un nivel descrito como datos: añadir un nivel nuevo es crear un asset, no programar.</summary>
-    [CreateAssetMenu(menuName = "Matrícula de Honor/Niveles/Nivel", fileName = "Level")]
+    [CreateAssetMenu(menuName = "Cum Laude/Niveles/Nivel", fileName = "Level")]
     public sealed class LevelDefinition : ScriptableObject
     {
         public string displayName = "Entrada";
