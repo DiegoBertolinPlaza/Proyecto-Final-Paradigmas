@@ -9,7 +9,17 @@ Los protagonistas son estudiantes, los enemigos son profesores y los niveles rec
 2. Unity Hub → *Add project from disk* → seleccionar esta carpeta (la raíz del repo es el proyecto Unity).
 3. La primera vez Unity regenera `Library/` (tarda unos minutos).
 
-No clonéis el repo dentro de OneDrive, Dropbox o similares: Unity y Git dan problemas con la sincronización.
+Si el repo está dentro de **OneDrive**, antes de abrirlo ejecuta (con Unity cerrado):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tools\onedrive-setup.ps1
+```
+
+Saca `Library/` fuera de OneDrive con una unión de carpetas y marca el resto como «Mantener siempre
+en este dispositivo», para que la sincronización no bloquee ficheros mientras Unity compila.
+
+El diseño del juego está en [docs/GDD.md](docs/GDD.md) y la forma de trabajar (ramas, commits, PRs,
+revisión) en [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Estructura
 
@@ -18,7 +28,9 @@ No clonéis el repo dentro de OneDrive, Dropbox o similares: Unity y Git dan pro
 | `Assets/_Project/Scripts/Runtime` | Código del juego (asmdef `MatriculaDeHonor.Runtime`) |
 | `Assets/_Project/Scripts/ML` | Agente del jefe con ML-Agents (asmdef `MatriculaDeHonor.ML`) |
 | `Assets/_Project/Tests/EditMode` | Tests unitarios (Window → General → Test Runner) |
-| `ml-training/` | Configuración `.yaml` y entorno Python del entrenamiento (pendiente) |
+| `ml-training/` | Configuración `.yaml` y entorno Python del entrenamiento |
+| `docs/` | GDD y plan semanal |
+| `tools/` | Scripts de apoyo (por ejemplo `onedrive-setup.ps1`) |
 
 ## Flujo de trabajo con Git
 
@@ -50,5 +62,6 @@ Unity no compila y el log muestra `UnauthorizedAccessException` al post-procesar
 2. Borra la carpeta `Library/Bee` (es caché; Unity la regenera).
 3. Vuelve a abrir el proyecto.
 
-Si vuelve a pasar, suele ser el antivirus bloqueando la DLL recién escrita: excluye la carpeta del proyecto
-del análisis en tiempo real.
+Si vuelve a pasar, suele ser el antivirus o OneDrive bloqueando la DLL recién escrita: ejecuta
+`tools\onedrive-setup.ps1` si el repo está en OneDrive, o excluye la carpeta del proyecto del análisis
+en tiempo real del antivirus.
