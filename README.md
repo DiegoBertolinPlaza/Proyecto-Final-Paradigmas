@@ -42,14 +42,22 @@ revisión) en [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Merge de escenas y prefabs
 
-`.gitattributes` usa el driver `unityyamlmerge`. Cada uno debe registrarlo una vez en su máquina
-(ajustando la ruta a su instalación de Unity):
+`.gitattributes` usa el driver `unityyamlmerge`. Cada uno debe registrarlo una vez en su clon:
 
 ```bash
 git config merge.unityyamlmerge.name "Unity SmartMerge"
-git config merge.unityyamlmerge.driver "'C:/Program Files/Unity/Hub/Editor/6000.6.8f1/Editor/Data/Tools/UnityYAMLMerge.exe' merge -p %O %B %A %A"
+git config merge.unityyamlmerge.driver "sh tools/unityyamlmerge.sh %O %A %B %P"
 git config merge.unityyamlmerge.recursive binary
 ```
+
+`tools/unityyamlmerge.sh` llama a UnityYAMLMerge de Unity 6000.6.8f1 (otra ruta: variable de entorno
+`UNITY_YAML_MERGE`). Si dos ramas tocan cosas distintas de la misma escena (una mueve un objeto, otra
+lo escala), las mezcla sola. Si las dos cambian lo mismo, a los 30 s se rinde y deja las marcas de
+conflicto de siempre para resolverlo a mano.
+
+No uséis la línea que trae la documentación de Unity (`UnityYAMLMerge.exe merge -p %O %B %A %A`):
+git le pasa ficheros temporales sin extensión, UnityYAMLMerge no sabe que son escenas y el merge se
+queda colgado.
 
 ## Problemas conocidos
 

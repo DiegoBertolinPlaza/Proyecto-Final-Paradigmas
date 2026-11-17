@@ -9,11 +9,11 @@ El plan por semanas está en [docs/Plan_semanal_Matricula_de_Honor.pdf](docs/Pla
 2. Clona el repo y ábrelo con *Add project from disk*. Si lo tienes dentro de **OneDrive**, ejecuta
    antes `tools\onedrive-setup.ps1` (saca `Library/` de OneDrive y marca el resto como
    «Mantener siempre en este dispositivo»).
-3. Registra el merge de escenas y prefabs (cambia la ruta si Unity está en otro sitio):
+3. Registra el merge de escenas y prefabs (detalles en el README, «Merge de escenas y prefabs»):
 
    ```bash
    git config merge.unityyamlmerge.name "Unity SmartMerge"
-   git config merge.unityyamlmerge.driver "'C:/Program Files/Unity/Hub/Editor/6000.6.8f1/Editor/Data/Tools/UnityYAMLMerge.exe' merge -p %O %B %A %A"
+   git config merge.unityyamlmerge.driver "sh tools/unityyamlmerge.sh %O %A %B %P"
    git config merge.unityyamlmerge.recursive binary
    ```
 
