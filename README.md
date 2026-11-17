@@ -1,4 +1,4 @@
-# Matrícula de Honor
+# Cum Laude
 
 Plataformas 3D para el proyecto final de Paradigmas de la Programación (ICAI, curso 2026-27).
 Los protagonistas son estudiantes, los enemigos son profesores y los niveles recorren el campus.
