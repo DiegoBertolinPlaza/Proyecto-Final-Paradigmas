@@ -1,0 +1,35 @@
+{
+    "name": "MatriculaDeHonor.Tests.ML",
+    "rootNamespace": "MatriculaDeHonor.Tests.ML",
+    "references": [
+        "MatriculaDeHonor.Runtime",
+        "MatriculaDeHonor.ML",
+        "MatriculaDeHonor.ML.Editor",
+        "Unity.ML-Agents",
+        "Unity.InferenceEngine",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS",
+        "MDH_MLAGENTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.ml-agents",
+            "expression": "3.0.0",
+            "define": "MDH_MLAGENTS"
+        }
+    ],
+    "noEngineReferences": false
+}
