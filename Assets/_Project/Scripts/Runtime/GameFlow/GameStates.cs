@@ -98,7 +98,7 @@ namespace MatriculaDeHonor.GameFlow
         public override GameStateId Id => GameStateId.GameOver;
     }
 
-    /// <summary>"¡Matrícula de Honor!": último nivel superado.</summary>
+    /// <summary>"¡Cum Laude!": último nivel superado.</summary>
     public sealed class GameCompletedGameState : ResultGameState
     {
         public GameCompletedGameState(GameManager context) : base(context) { }
