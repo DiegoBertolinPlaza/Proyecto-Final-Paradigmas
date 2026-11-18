@@ -75,7 +75,7 @@ namespace MatriculaDeHonor.UI
             switch (game.CurrentState)
             {
                 case GameStateId.MainMenu:
-                    DrawPanel("MATRÍCULA DE HONOR", "Plataformas 3D en el campus de ICAI",
+                    DrawPanel("CUM LAUDE", "Plataformas 3D en el campus de ICAI",
                         ("Nueva partida", game.StartNewGame),
                         ("Salir", game.QuitGame));
                     break;
@@ -109,7 +109,7 @@ namespace MatriculaDeHonor.UI
                     break;
 
                 case GameStateId.GameCompleted:
-                    DrawPanel("¡MATRÍCULA DE HONOR!", $"Has terminado la carrera con {credits} ECTS.",
+                    DrawPanel("¡CUM LAUDE!", $"Has terminado la carrera con {credits} ECTS.",
                         ("Volver a jugar", game.StartNewGame),
                         ("Menú principal", game.ReturnToMainMenu));
                     break;

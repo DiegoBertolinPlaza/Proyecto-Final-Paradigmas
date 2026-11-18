@@ -37,8 +37,8 @@ namespace MatriculaDeHonor.UI
             if (refreshTimer <= 0f)
             {
                 refreshTimer = RefreshInterval;
-                enemies = FindObjectsByType<EnemyBase>(FindObjectsSortMode.None);
-                bosses = FindObjectsByType<BossController>(FindObjectsSortMode.None);
+                enemies = FindObjectsByType<EnemyBase>(FindObjectsInactive.Exclude);
+                bosses = FindObjectsByType<BossController>(FindObjectsInactive.Exclude);
                 player = FindAnyObjectByType<PlayerController>();
             }
         }

@@ -8,7 +8,7 @@ namespace MatriculaDeHonor.Player
     /// Todos los números del control del estudiante. Están en un ScriptableObject para poder
     /// ajustar el "game feel" en caliente sin tocar código y tener varios perfiles si hace falta.
     /// </summary>
-    [CreateAssetMenu(menuName = "Matrícula de Honor/Jugador/Configuración", fileName = "PlayerConfig")]
+    [CreateAssetMenu(menuName = "Cum Laude/Jugador/Configuración", fileName = "PlayerConfig")]
     public sealed class PlayerConfig : ScriptableObject
     {
         [Header("Movimiento en suelo")]

@@ -1,4 +1,4 @@
-# Matrícula de Honor
+# Cum Laude
 
 Plataformas 3D para el proyecto final de Paradigmas de la Programación (ICAI, curso 2026-27).
 Los protagonistas son estudiantes, los enemigos son profesores y los niveles recorren el campus.
@@ -38,3 +38,17 @@ git config merge.unityyamlmerge.name "Unity SmartMerge"
 git config merge.unityyamlmerge.driver "'C:/Program Files/Unity/Hub/Editor/6000.6.8f1/Editor/Data/Tools/UnityYAMLMerge.exe' merge -p %O %B %A %A"
 git config merge.unityyamlmerge.recursive binary
 ```
+
+## Problemas conocidos
+
+### «Access to the path ...\Library\Bee\...\post-processed\*.dll is denied»
+
+Unity no compila y el log muestra `UnauthorizedAccessException` al post-procesar una DLL de un paquete
+(por ejemplo `Unity.Profiling.Core.dll`). No es un error de nuestro código: es la caché de compilación bloqueada.
+
+1. Cierra Unity.
+2. Borra la carpeta `Library/Bee` (es caché; Unity la regenera).
+3. Vuelve a abrir el proyecto.
+
+Si vuelve a pasar, suele ser el antivirus bloqueando la DLL recién escrita: excluye la carpeta del proyecto
+del análisis en tiempo real.

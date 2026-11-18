@@ -7,7 +7,7 @@ namespace MatriculaDeHonor.Levels
     /// Lista ordenada de niveles (de fácil a difícil) y la escena del menú. Vive en Resources
     /// para que el GameManager la encuentre al arrancar desde cualquier escena.
     /// </summary>
-    [CreateAssetMenu(menuName = "Matrícula de Honor/Niveles/Catálogo", fileName = "LevelCatalog")]
+    [CreateAssetMenu(menuName = "Cum Laude/Niveles/Catálogo", fileName = "LevelCatalog")]
     public sealed class LevelCatalog : ScriptableObject
     {
         public const string ResourcePath = "LevelCatalog";
