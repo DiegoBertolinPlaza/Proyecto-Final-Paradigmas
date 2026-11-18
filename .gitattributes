@@ -1,0 +1,21 @@
+# Unity guarda escenas, prefabs y assets como YAML de texto: forzamos LF y merge de texto.
+* text=auto
+
+*.cs        text diff=csharp
+*.unity     text merge=unityyamlmerge eol=lf
+*.prefab    text merge=unityyamlmerge eol=lf
+*.asset     text merge=unityyamlmerge eol=lf
+*.mat       text merge=unityyamlmerge eol=lf
+*.anim      text merge=unityyamlmerge eol=lf
+*.controller text merge=unityyamlmerge eol=lf
+*.meta      text eol=lf
+
+# Binarios
+*.png  binary
+*.jpg  binary
+*.psd  binary
+*.fbx  binary
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
+*.onnx binary

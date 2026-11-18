@@ -1,0 +1,51 @@
+# ---- Unity: carpetas generadas (NO se suben, y el enunciado pide borrarlas en la entrega) ----
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Ficheros que genera el IDE
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crash reports y builds
+sysinfo.txt
+*.apk
+*.aab
+*.unitypackage
+crashlytics-build.properties
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ---- ML-Agents: resultados de entrenamiento (pesan mucho; los .onnx buenos se copian a Assets) ----
+/ml-training/results/
+/ml-training/summaries/
+/ml-training/.venv/
+__pycache__/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
