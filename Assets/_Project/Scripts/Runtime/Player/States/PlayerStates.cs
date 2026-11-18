@@ -36,11 +36,13 @@ namespace MatriculaDeHonor.Player.States
 
     public sealed class JumpState : PlayerStateBase
     {
+        private bool variableHeight;
+
         public JumpState(PlayerController context) : base(context) { }
 
         protected override void OnEnter()
         {
-            float height = Context.TakeJumpHeight();
+            float height = Context.TakeJumpHeight(out variableHeight);
             Context.ConsumeJumpBuffer();
 
             Motor.GravityEnabled = true;
@@ -52,9 +54,10 @@ namespace MatriculaDeHonor.Player.States
         {
             Context.ApplyHorizontalMovement(Config.airControl, deltaTime);
 
-            // Salto de altura variable: si sueltas el botón mientras subes, cae antes.
+            // Salto de altura variable: si sueltas el botón mientras subes, cae antes (los rebotes no).
             bool rising = Motor.VerticalVelocity > 0f;
-            Motor.GravityScale = rising && !Context.Frame.JumpHeld ? Config.lowJumpGravityMultiplier : 1f;
+            bool cut = variableHeight && rising && !Context.Frame.JumpHeld;
+            Motor.GravityScale = cut ? Config.lowJumpGravityMultiplier : 1f;
         }
     }
 

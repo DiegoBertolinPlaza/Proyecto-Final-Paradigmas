@@ -222,16 +222,22 @@ namespace MatriculaDeHonor.Player
             jumpUsedSinceGrounded = true;
         }
 
-        /// <summary>Altura del próximo salto: la de un rebote si hay uno pendiente, si no la normal.</summary>
-        public float TakeJumpHeight()
+        /// <summary>
+        /// Altura del próximo salto: la de un rebote si hay uno pendiente, si no la normal.
+        /// <paramref name="variableHeight"/> dice si soltar el botón lo acorta: los rebotes no,
+        /// porque su altura ya se decidió al pisar (más alta si mantenías saltar).
+        /// </summary>
+        public float TakeJumpHeight(out bool variableHeight)
         {
             if (pendingJumpHeight >= 0f)
             {
                 float height = pendingJumpHeight;
                 pendingJumpHeight = -1f;
+                variableHeight = false;
                 return height;
             }
 
+            variableHeight = true;
             return Stats.Get(StatType.JumpHeight);
         }
 
