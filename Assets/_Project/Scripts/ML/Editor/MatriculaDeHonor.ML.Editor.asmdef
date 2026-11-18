@@ -1,0 +1,28 @@
+{
+    "name": "MatriculaDeHonor.ML.Editor",
+    "rootNamespace": "MatriculaDeHonor.ML.Editor",
+    "references": [
+        "MatriculaDeHonor.Runtime",
+        "MatriculaDeHonor.ML",
+        "Unity.ML-Agents"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "MDH_MLAGENTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.ml-agents",
+            "expression": "3.0.0",
+            "define": "MDH_MLAGENTS"
+        }
+    ],
+    "noEngineReferences": false
+}
