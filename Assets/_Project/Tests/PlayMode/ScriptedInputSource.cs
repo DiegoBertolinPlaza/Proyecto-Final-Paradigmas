@@ -14,6 +14,7 @@ namespace MatriculaDeHonor.Tests.PlayMode
         public bool JumpHeld;
 
         private bool jumpPressedThisFrame;
+        private bool groundPoundPressedThisFrame;
 
         /// <summary>Pulsa saltar en el próximo frame. <paramref name="hold"/> = false lo suelta enseguida.</summary>
         public void PressJump(bool hold = true)
@@ -21,6 +22,9 @@ namespace MatriculaDeHonor.Tests.PlayMode
             jumpPressedThisFrame = true;
             JumpHeld = hold;
         }
+
+        /// <summary>Pulsa el culetazo en el próximo frame.</summary>
+        public void PressGroundPound() => groundPoundPressedThisFrame = true;
 
         public PlayerInputFrame ReadFrame()
         {
@@ -30,10 +34,12 @@ namespace MatriculaDeHonor.Tests.PlayMode
                 MoveIsWorldSpace = true,
                 RunHeld = Run,
                 JumpPressed = jumpPressedThisFrame,
-                JumpHeld = JumpHeld || jumpPressedThisFrame
+                JumpHeld = JumpHeld || jumpPressedThisFrame,
+                GroundPoundPressed = groundPoundPressedThisFrame
             };
 
             jumpPressedThisFrame = false;
+            groundPoundPressedThisFrame = false;
             return frame;
         }
     }
