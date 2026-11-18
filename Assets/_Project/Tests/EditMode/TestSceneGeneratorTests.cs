@@ -93,6 +93,13 @@ namespace MatriculaDeHonor.Tests
         }
 
         [Test]
+        public void ElJugadorParpadeaTrasUnGolpe()
+        {
+            var player = Single<PlayerController>();
+            Assert.That(player.GetComponent<PlayerDamageFeedback>(), Is.Not.Null);
+        }
+
+        [Test]
         public void LaCamaraPrincipalSigueAlJugador()
         {
             var player = Single<PlayerController>();

@@ -97,6 +97,9 @@ namespace MatriculaDeHonor.Editor
             // "Nariz": deja ver hacia dónde mira el personaje.
             AddVisual(root.transform, PrimitiveType.Cube, "Frente",
                 new Vector3(0f, 1.35f, 0.35f), new Vector3(0.2f, 0.2f, 0.3f), PrototypeColor.Platform);
+
+            // Parpadea mientras es invulnerable; coge solo los Renderer de las piezas de arriba.
+            root.AddComponent<PlayerDamageFeedback>();
             return this;
         }
 
