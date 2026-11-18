@@ -19,3 +19,7 @@
 *.mp3  binary
 *.ogg  binary
 *.onnx binary
+*.pdf  binary
+
+# Scripts de shell: siempre LF (sh no entiende CRLF)
+*.sh   text eol=lf
