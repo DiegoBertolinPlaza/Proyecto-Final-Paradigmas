@@ -28,7 +28,7 @@ namespace MatriculaDeHonor.Items
     ///  · Bata de laboratorio: ChemicalResistance = 1 (inmune a charcos).
     ///  · Chuleta: sin modificadores, 1 carga de escudo.
     /// </summary>
-    [CreateAssetMenu(menuName = "Matrícula de Honor/Objetos/Power-up", fileName = "PowerUp")]
+    [CreateAssetMenu(menuName = "Cum Laude/Objetos/Power-up", fileName = "PowerUp")]
     public sealed class PowerUpDefinition : ScriptableObject, IStatModifierSource
     {
         [SerializeField] private string displayName = "Café";

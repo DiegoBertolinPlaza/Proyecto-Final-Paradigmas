@@ -3,6 +3,7 @@
     "rootNamespace": "MatriculaDeHonor.Tests",
     "references": [
         "MatriculaDeHonor.Runtime",
+        "MatriculaDeHonor.Editor",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

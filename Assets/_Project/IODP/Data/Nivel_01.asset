@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8714d46480f0d57419b5e92b3b8ce4e1, type: 3}
+  m_Name: Nivel_01
+  m_EditorClassIdentifier: MatriculaDeHonor.Runtime::MatriculaDeHonor.Levels.LevelDefinition
+  displayName: Entrada
+  campusZone: IODP / Entrada
+  sceneName: IODP_01_Entrada
+  difficulty: 1
+  honorCount: 3
+  introText: "Aprender a moverse: entrada \u2192 recepci\xF3n \u2192 tornos abiertos \u2192 descansillo \u2192 matr\xEDcula. Reserva para el bedel."

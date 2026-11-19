@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace MatriculaDeHonor.Boss
 {
-    [CreateAssetMenu(menuName = "Matrícula de Honor/Jefe/Configuración", fileName = "BossConfig")]
+    [CreateAssetMenu(menuName = "Cum Laude/Jefe/Configuración", fileName = "BossConfig")]
     public sealed class BossConfig : ScriptableObject
     {
         public string displayName = "El Tribunal";

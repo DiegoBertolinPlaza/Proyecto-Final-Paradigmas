@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6e5b8ae7cd4ef498eb49df7b46f3f9, type: 3}
+  m_Name: Ambiente_03
+  m_EditorClassIdentifier: MatriculaDeHonor.IODP::MatriculaDeHonor.IODP.CampusEnvironmentDefinition
+  number: 3
+  title: "Ba\xF1os"
+  sceneName: IODP_03_Banos
+  accent: {r: 0.9137255, g: 0.68235296, b: 0.2862745, a: 1}
+  inspiration: "Fotos 13, 14 y 21: baldosas c\xE1lidas, lavabos alineados, espejos y cabinas de madera."
+  gameplayIdea: Ruta entre lavabos y cabinas. El suelo mojado solo es visual en esta fase; el deslizamiento queda pendiente.
+  invented: 0
+  awaitingReference: 0

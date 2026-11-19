@@ -1,4 +1,4 @@
-# Matrícula de Honor
+# Cum Laude
 
 Plataformas 3D para el proyecto final de Paradigmas de la Programación (ICAI, curso 2026-27).
 Los protagonistas son estudiantes, los enemigos son profesores y los niveles recorren el campus.
@@ -9,7 +9,17 @@ Los protagonistas son estudiantes, los enemigos son profesores y los niveles rec
 2. Unity Hub → *Add project from disk* → seleccionar esta carpeta (la raíz del repo es el proyecto Unity).
 3. La primera vez Unity regenera `Library/` (tarda unos minutos).
 
-No clonéis el repo dentro de OneDrive, Dropbox o similares: Unity y Git dan problemas con la sincronización.
+Si el repo está dentro de **OneDrive**, antes de abrirlo ejecuta (con Unity cerrado):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tools\onedrive-setup.ps1
+```
+
+Saca `Library/` fuera de OneDrive con una unión de carpetas y marca el resto como «Mantener siempre
+en este dispositivo», para que la sincronización no bloquee ficheros mientras Unity compila.
+
+El diseño del juego está en [docs/GDD.md](docs/GDD.md) y la forma de trabajar (ramas, commits, PRs,
+revisión) en [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Estructura
 
@@ -18,7 +28,9 @@ No clonéis el repo dentro de OneDrive, Dropbox o similares: Unity y Git dan pro
 | `Assets/_Project/Scripts/Runtime` | Código del juego (asmdef `MatriculaDeHonor.Runtime`) |
 | `Assets/_Project/Scripts/ML` | Agente del jefe con ML-Agents (asmdef `MatriculaDeHonor.ML`) |
 | `Assets/_Project/Tests/EditMode` | Tests unitarios (Window → General → Test Runner) |
-| `ml-training/` | Configuración `.yaml` y entorno Python del entrenamiento (pendiente) |
+| `ml-training/` | Configuración `.yaml` y entorno Python del entrenamiento |
+| `docs/` | GDD y plan semanal |
+| `tools/` | Scripts de apoyo (por ejemplo `onedrive-setup.ps1`) |
 
 ## Flujo de trabajo con Git
 
@@ -30,14 +42,22 @@ No clonéis el repo dentro de OneDrive, Dropbox o similares: Unity y Git dan pro
 
 ### Merge de escenas y prefabs
 
-`.gitattributes` usa el driver `unityyamlmerge`. Cada uno debe registrarlo una vez en su máquina
-(ajustando la ruta a su instalación de Unity):
+`.gitattributes` usa el driver `unityyamlmerge`. Cada uno debe registrarlo una vez en su clon:
 
 ```bash
 git config merge.unityyamlmerge.name "Unity SmartMerge"
-git config merge.unityyamlmerge.driver "'C:/Program Files/Unity/Hub/Editor/6000.6.8f1/Editor/Data/Tools/UnityYAMLMerge.exe' merge -p %O %B %A %A"
+git config merge.unityyamlmerge.driver "sh tools/unityyamlmerge.sh %O %A %B %P"
 git config merge.unityyamlmerge.recursive binary
 ```
+
+`tools/unityyamlmerge.sh` llama a UnityYAMLMerge de Unity 6000.6.8f1 (otra ruta: variable de entorno
+`UNITY_YAML_MERGE`). Si dos ramas tocan cosas distintas de la misma escena (una mueve un objeto, otra
+lo escala), las mezcla sola. Si las dos cambian lo mismo, a los 30 s se rinde y deja las marcas de
+conflicto de siempre para resolverlo a mano.
+
+No uséis la línea que trae la documentación de Unity (`UnityYAMLMerge.exe merge -p %O %B %A %A`):
+git le pasa ficheros temporales sin extensión, UnityYAMLMerge no sabe que son escenas y el merge se
+queda colgado.
 
 ## Problemas conocidos
 
@@ -50,5 +70,6 @@ Unity no compila y el log muestra `UnauthorizedAccessException` al post-procesar
 2. Borra la carpeta `Library/Bee` (es caché; Unity la regenera).
 3. Vuelve a abrir el proyecto.
 
-Si vuelve a pasar, suele ser el antivirus bloqueando la DLL recién escrita: excluye la carpeta del proyecto
-del análisis en tiempo real.
+Si vuelve a pasar, suele ser el antivirus o OneDrive bloqueando la DLL recién escrita: ejecuta
+`tools\onedrive-setup.ps1` si el repo está en OneDrive, o excluye la carpeta del proyecto del análisis
+en tiempo real del antivirus.
