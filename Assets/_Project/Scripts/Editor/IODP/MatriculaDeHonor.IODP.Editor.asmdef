@@ -1,0 +1,7 @@
+{
+  "name": "MatriculaDeHonor.IODP.Editor",
+  "rootNamespace": "MatriculaDeHonor.IODP.Editor",
+  "references": ["MatriculaDeHonor.Editor", "MatriculaDeHonor.Runtime", "MatriculaDeHonor.IODP", "UnityEditor.TestRunner", "UnityEngine.TestRunner"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

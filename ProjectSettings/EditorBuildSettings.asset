@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_00_Campus.unity
+    guid: 6f6b606946bb12144ab78c197d50aec9
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_01_Entrada.unity
+    guid: 956963dd2b7e7e343b9adadecc4e8123
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_02_Aulas.unity
+    guid: 37813ecfb0096dd4fb363884923c1cd6
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_03_Banos.unity
+    guid: 707761c26258c1e4b83a4282500736e7
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_04_Cafeteria.unity
+    guid: ca2cb629014bb894f97982cd28d9bb77
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_05_Revision.unity
+    guid: 92746f3bd790ba94ab0c86bb31948054
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_06_Biblioteca.unity
+    guid: c31e75d94ec86e342bd1409cbc296e6d
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_07_Laboratorios.unity
+    guid: d2df2c727b4b6cc40a00710e066ac278
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_08_Ordenadores.unity
+    guid: 8ce49bd45abd2674988aac60d304d22f
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_09_Despachos.unity
+    guid: 5cf16788e69633d4ea012e5568da8d36
+  - enabled: 1
+    path: Assets/_Project/IODP/Scenes/IODP_10_Tribunal.unity
+    guid: 3c2c0891f9740014b93883d6f1274eef
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

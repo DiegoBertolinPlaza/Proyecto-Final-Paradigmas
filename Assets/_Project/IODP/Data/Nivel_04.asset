@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8714d46480f0d57419b5e92b3b8ce4e1, type: 3}
+  m_Name: Nivel_04
+  m_EditorClassIdentifier: MatriculaDeHonor.Runtime::MatriculaDeHonor.Levels.LevelDefinition
+  displayName: "Cafeter\xEDa"
+  campusZone: "IODP / Cafeter\xEDa"
+  sceneName: IODP_04_Cafeteria
+  difficulty: 4
+  honorCount: 3
+  introText: "Salto entre mesas y zona de bandejas. Espacio reservado para el futuro power-up Caf\xE9."

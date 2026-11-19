@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6e5b8ae7cd4ef498eb49df7b46f3f9, type: 3}
+  m_Name: Ambiente_07
+  m_EditorClassIdentifier: MatriculaDeHonor.IODP::MatriculaDeHonor.IODP.CampusEnvironmentDefinition
+  number: 7
+  title: Laboratorios
+  sceneName: IODP_07_Laboratorios
+  accent: {r: 0.9137255, g: 0.68235296, b: 0.2862745, a: 1}
+  inspiration: "Fotos 9, 10, 11 y 20: vitrinas, bloques motor y bancadas amarillas; laboratorio mec\xE1nico."
+  gameplayIdea: "Bancadas, motores y per\xEDmetros amarillos. Vitrinas abiertas estilizadas; sin qu\xEDmicos activos todav\xEDa."
+  invented: 0
+  awaitingReference: 0

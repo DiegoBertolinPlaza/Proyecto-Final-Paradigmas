@@ -1,0 +1,6 @@
+{
+  "name": "MatriculaDeHonor.IODP",
+  "rootNamespace": "MatriculaDeHonor.IODP",
+  "references": ["MatriculaDeHonor.Runtime", "Unity.InputSystem"],
+  "autoReferenced": true
+}

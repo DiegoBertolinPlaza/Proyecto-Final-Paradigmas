@@ -1,0 +1,122 @@
+[
+  {
+    "number": 1,
+    "title": "Entrada",
+    "scene": "IODP_01_Entrada",
+    "invented": false,
+    "provisional": false,
+    "ideas": [
+      "Piedra + ladrillo sobre el acceso",
+      "Recepción a un lado; camino legible",
+      "Escalera y descansillo inventados"
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Aulas",
+    "scene": "IODP_02_Aulas",
+    "invented": false,
+    "provisional": false,
+    "ideas": [
+      "Pupitres bajos que se pueden saltar",
+      "Pizarra y tarima como destino",
+      "Coberturas para el profe de Cálculo"
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Baños",
+    "scene": "IODP_03_Banos",
+    "invented": false,
+    "provisional": false,
+    "ideas": [
+      "Cabinas de madera y lavabos",
+      "Azul para espejo y agua",
+      "Charcos solo decorativos por ahora"
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Cafetería",
+    "scene": "IODP_04_Cafeteria",
+    "invented": false,
+    "provisional": false,
+    "ideas": [
+      "Pilares con cinturón de madera",
+      "Mostrador de café al fondo",
+      "Mesas como ruta secundaria"
+    ]
+  },
+  {
+    "number": 5,
+    "title": "La Revisión",
+    "scene": "IODP_05_Revision",
+    "invented": false,
+    "provisional": false,
+    "ideas": [
+      "Capilla reinterpretada como arena",
+      "Bancos fuera del espacio de combate",
+      "Atril y estrado, luz cálida"
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Biblioteca",
+    "scene": "IODP_06_Biblioteca",
+    "invented": true,
+    "provisional": false,
+    "ideas": [
+      "Biblioteca inventada",
+      "Estanterías que crean escondites",
+      "Altillo y rincón de lectura"
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Laboratorios",
+    "scene": "IODP_07_Laboratorios",
+    "invented": false,
+    "provisional": false,
+    "ideas": [
+      "Motores y bancadas amarillas",
+      "Pasillo central de trabajo",
+      "Vitrinas abiertas estilizadas"
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Ordenadores",
+    "scene": "IODP_08_Ordenadores",
+    "invented": true,
+    "provisional": false,
+    "ideas": [
+      "Informática inventada",
+      "Pantallas azules y servidores",
+      "Reserva para mecánica eléctrica"
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Despachos",
+    "scene": "IODP_09_Despachos",
+    "invented": false,
+    "provisional": false,
+    "ideas": [
+      "Verde, crema y marcos de madera",
+      "Puertas repetidas a ambos lados",
+      "Zona central para patrullas"
+    ]
+  },
+  {
+    "number": 10,
+    "title": "El Tribunal",
+    "scene": "IODP_10_Tribunal",
+    "invented": false,
+    "provisional": true,
+    "ideas": [
+      "Aula magna provisional",
+      "Gradas laterales y pantalla al fondo",
+      "Se adaptará a la foto del aula grande"
+    ]
+  }
+]

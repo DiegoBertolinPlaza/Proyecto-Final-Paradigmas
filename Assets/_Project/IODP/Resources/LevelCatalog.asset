@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6fbab79e3e22f42b7f1e0785750381, type: 3}
+  m_Name: LevelCatalog
+  m_EditorClassIdentifier: MatriculaDeHonor.Runtime::MatriculaDeHonor.Levels.LevelCatalog
+  mainMenuScene: IODP_00_Campus
+  levels:
+  - {fileID: 11400000, guid: 93782f5214918854192f222ec0b62689, type: 2}
+  - {fileID: 11400000, guid: 34b69fe76fa6f0e439f6fb9395a298b6, type: 2}
+  - {fileID: 11400000, guid: 1bae2725737dda54fa2a9dc478cf409a, type: 2}
+  - {fileID: 11400000, guid: 5d702c535843fc843a4e730d4fc8f01b, type: 2}
+  - {fileID: 11400000, guid: 201493022156f0241a4df1f285f9ff2f, type: 2}
+  - {fileID: 11400000, guid: 4d2649d0023bd60459bb0d91ec117599, type: 2}
+  - {fileID: 11400000, guid: c43e70fde177a5043b08d2dabc2c5487, type: 2}
+  - {fileID: 11400000, guid: 58bb67d361550e843b57a6bc9b96db27, type: 2}
+  - {fileID: 11400000, guid: f4c96cae5a65ea54aa0a04e70e527e0c, type: 2}
+  - {fileID: 11400000, guid: 5cb562bd07068f445b08cbd40f7a8174, type: 2}
